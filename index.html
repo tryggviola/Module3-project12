@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Styles/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Noteit</title>
+	</head>
+	<body>
+		<div class="main-box">
+			<div class="login" id="login">
+				<div class="title">
+					<h1>Login</h1>
+					<p>Welcome to Noteit</p>
+				</div>
+				<div class="login-field">
+					<form class="forms" id="myForm">
+						<label>Username</label>
+						<input
+							type="text"
+							id="username"
+							name="username"
+							required
+							oninput="removeErrorMessage(this)"
+						/>
+						<div class="errorMessage" id="username-errorMessage"></div>
+						<label>Password</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							required
+							oninput="removeErrorMessage(this)"
+						/>
+						<div class="errorMessage" id="password-errorMessage"></div>
+
+						<button id="login-button">Login</button>
+					</form>
+				</div>
+			</div>
+			<div class="notes" id="notes">
+				<div class="notes-header">
+					<p>Hi</p>
+					<p id="user"></p>
+				</div>
+        <div class="text-area">
+				  <textarea
+          placeholder="Type a note here..."
+					id="note"
+					onchange="saveNote()"
+				  ></textarea>
+				  <button id="logout-button">Logout</button>
+        </div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

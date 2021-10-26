@@ -1,0 +1,142 @@
+body {
+	background-color: #55b49d;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+h1 {
+	margin-bottom: 8px;
+	font-size: 48px;
+}
+
+p {
+	color: #5e5e5e;
+	font-size: 12px;
+	margin-top: 0;
+}
+
+label {
+	color: #5e5e5e;
+	font-size: 12px;
+}
+
+button {
+	width: 280px;
+	height: 32px;
+
+	align-items: center;
+
+	background-color: #55b49d;
+	color: white;
+
+	border: none;
+
+	margin-top: 32px;
+	margin-bottom: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-box {
+	border: 1px solid black;
+	background-color: white;
+	height: 640px;
+	width: 320px;
+	margin: 130px 0 130px 0;
+	padding: 0 100px;
+
+	label {
+		margin-bottom: 8px;
+	}
+
+	input {
+		width: 100%;
+		height: 32px;
+
+		background-color: #f6f2f2;
+
+		border: none;
+		border-radius: 0;
+		padding-left: 8px;
+	}
+
+	textarea {
+		width: 100%;
+		height: 400px;
+		background-color: #f6f2f2;
+
+		resize: none;
+
+		border: none;
+		border-radius: 0;
+	}
+
+	.login {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+			margin-top: 48px;
+			margin-bottom: 120px;
+			text-align: center;
+		}
+
+		.forms {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.errorMessage {
+			display: inline-block;
+			color: red;
+			margin: 4px 8px 24px;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+
+	.notes {
+		display: none;
+
+		&-header {
+			display: flex;
+			column-gap: 8px;
+		}
+
+		p {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+				Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+			color: black;
+			font-size: 32px;
+
+			padding-top: 24px;
+		}
+
+		textarea {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+				Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+			font-size: 12px;
+
+			padding: 8px;
+		}
+	}
+}
+
+.text-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.errorMessage {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
